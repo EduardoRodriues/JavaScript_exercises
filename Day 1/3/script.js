@@ -4,9 +4,10 @@
 
 //window.prompt('Fill in with your name')
 
-const result1 = window.prompt('fill in with random number')
-const result2 = window.prompt('fill in another time')
 
-const result3 = Number(result1) + Number(result2)
+const number1 = window.prompt('Fill in with a number')
+const number2 = window.prompt('Fill in another time')
 
-alert(`Your result is ${result3}`)
+const result = Number(number1) + Number(number2)
+
+alert(`Your result is ${result}`)

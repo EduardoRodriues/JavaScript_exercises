@@ -1,7 +1,10 @@
-let accounter = 1
+let number = 1
 
-accounter++
-accounter++
-accounter+=5
+number++
+number++
+number+=5
+number+=10
+number++
+number++
 
-console.log(accounter)
+console.log(number)

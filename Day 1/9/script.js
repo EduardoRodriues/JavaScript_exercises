@@ -31,6 +31,8 @@ function clique(x, y, p, z) {
   inf.innerHTML = result
 }
 
+clique()
+
  
 
 
