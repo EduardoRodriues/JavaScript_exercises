@@ -73,7 +73,7 @@ h1{
     transform: translateY(50%);
 }
 
-#input-testt{
+.input-weight{
     position: relative;
     display: flex;
     font-size: 1.2rem;
@@ -84,7 +84,7 @@ h1{
     transform: translateY(-600%);
 }
 
-#input-test{
+.input-height{
     position: relative;
     display: flex;
     font-size: 1.2rem;

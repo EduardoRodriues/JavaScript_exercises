@@ -18,6 +18,4 @@ function Product (name, price, amount) {
 
 
 const p1 = new Product('T-shirt', 20, 10)
-p1.amount = 500
-delete p1.amount
 console.log(p1)

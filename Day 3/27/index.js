@@ -9,4 +9,4 @@ const conta = (operator, acumulator, ...numbers) => {
     console.log(acumulator)
 }
 
-conta('+', 20, 30, 6, 3)
+conta('*', 20, 30, 6, 3)

@@ -1,5 +1,5 @@
 const recursiv = (max) => {
-    if (max >= 10000) return
+    if (max >= 100) return
     max++
     console.log(max)
     recursiv(max)

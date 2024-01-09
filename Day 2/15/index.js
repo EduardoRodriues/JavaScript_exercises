@@ -1,6 +1,6 @@
 
-const people = ['Marco', 'Bolieda', 'Frachesco']
+const people = ['Marco', 'Bolieda', 'Frachesco', 'Carl']
 
-for (let i = 0; i < people.lenght; i++) {
-    console.log('nome:', people[i])
+for (let i = 0; i < 2; i++) {
+    console.log(people[i])
 }

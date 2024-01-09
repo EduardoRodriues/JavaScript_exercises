@@ -4,12 +4,11 @@ function returnBigest(x, y) {
 }
 */
 
-const return_2 = (x, y) => {
+const biggest = (x, y) => {
     return x > y ? x : y
 }
 
 
 
-
-console.log(return_2(30, 7))
+console.log(biggest(30, 77))
 

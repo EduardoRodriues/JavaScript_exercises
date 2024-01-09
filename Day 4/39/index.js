@@ -9,11 +9,9 @@ const people = [
 ]
 
 const Elden = people.reduce((acml, value) => {
-    if (acml.age > value.age) {
-       return acml
-    }   
+    return acml > value ? acml : ''
 })
 
-console.log(Elden)
+console.log(Elden(people.age))
 
    

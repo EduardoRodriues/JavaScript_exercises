@@ -18,18 +18,18 @@ const people = [
     {name: 'Evelin', age: 24}
 ]
 
-const peoplefilter = people.filter((obj) => {
+const names5letters = people.filter((obj) => {
     return obj.name.length > 6
 })
 
-const peoplefilter_2 = people.filter((obj) => {
+const names50age = people.filter((obj) => {
     return obj.age > 50
 })
 
-const peoplefilter_3 = people.filter((obj) => {
-    return obj.name .toLowerCase().endsWith('o')
+const namesOends = people.filter((obj) => {
+    return obj.name.endsWith('o')
 })
 
-console.log(peoplefilter)
-console.log(peoplefilter_2)
-console.log(peoplefilter_3)
+console.log(names5letters)
+console.log(names50age)
+console.log(namesOends)

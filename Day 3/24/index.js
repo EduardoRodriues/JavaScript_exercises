@@ -1,19 +1,17 @@
  const showHour = () => {
-    let data = new Date()
+   let date = new Date()
 
-    return data.toLocaleTimeString('pt-BR', {
-        hour12: false
-    })
- }
+   return date.toLocaleTimeString('pt-BR', {
+      hour12: false
+   })
+}
 
- const timer = setInterval(function() {
-    console.log(showHour())
- }, 1000)
+const timer = setInterval(function () {
+   console.log(showHour())
+}, 1000)
 
- setTimeout(function() {
-    clearInterval(timer)
- }, 3000)
-
- setTimeout(function() {
-    console.log('fuck')
- }, 5000)
+setTimeout(function () {
+   clearInterval(timer)
+}, 3000)
+ 
+ 

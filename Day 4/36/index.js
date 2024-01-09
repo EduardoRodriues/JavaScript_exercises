@@ -3,6 +3,8 @@ const a2 = [4, 5, 6]
 
 //const a3 = a1.concat(a2, 'Paul', [7, 8, 9])
 
-const a3 = [...a1, ...a2, ...[7, 8, 9], 'Paul']
+const a3 = [...a1, ...a2, ...[7, 8, 9], '10']
 
 console.log(a3)
+
+//rest operator

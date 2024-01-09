@@ -5,44 +5,52 @@ const elements = [
     {tag: 'section', text: 'Phrase 4'}
 ]
 
-const sectionn = document.querySelector('.conteiner')
+const sectioN = document.querySelector('.conteiner')
 
-function createDiv() {
-    const div =  document.createElement('div')
-    sectionn.appendChild(div)
+//section
+
+const sectionCreator = () => {
+    const section = document.createElement('section')
+    sectioN.appendChild(section)
+    section.classList.add('sectionCreated')
+    section.innerHTML = elements[3].text
+    return
 }
 
-createDiv()
+sectionCreator()
 
-function creaP() {
-    const p =  document.createElement('p')
-    sectionn.appendChild(p)
+//div
+
+const section_2 = document.querySelector('.sectionCreated')
+const DivCreator = () => {
+    const Div = document.createElement('div')
+    section_2.appendChild(Div)
+    Div.classList.add('div_created')
+    Div.innerHTML = elements[1].text
+    return
+}
+
+DivCreator()
+
+//P
+
+const div_created = document.querySelector('.div_created')
+const pCreator = () => {
+    const p = document.createElement('p')
+    div_created.appendChild(p)
+    p.classList.add('p-created')
     p.innerHTML = elements[0].text
 }
 
-creaP()
+pCreator()
 
-function creaFooter() {
-    const footer =  document.createElement('footer')
-    sectionn.appendChild(footer)
-    footer.innerHTML = elements[1].text
+//footer
+
+const p_created = document.querySelector('.p-created')
+const FooterCreator = () => {
+    const footer = document.createElement('footer')
+    p_created.appendChild(footer)
+    footer.innerHTML = elements[2].text
 }
 
-creaFooter()
-
-function createDivv() {
-    const divv =  document.createElement('div')
-    sectionn.appendChild(divv)
-    divv.innerHTML = elements[2].text
-}
-
-createDivv()
-
-
-function creaSection() {
-    const section =  document.createElement('section')
-    sectionn.appendChild(section)
-    section.innerHTML = elements[3].text
-}
-
-creaSection()
+FooterCreator()

@@ -1,39 +1,25 @@
-const objA = {
-    keyA: 'A'
-}
-
-const objB = {
-    keyB: 'B'
-}
-
-const objC = new Object()
-objC.keyC = 'C'
-
-Object.setPrototypeOf(objB, objA)
-Object.setPrototypeOf(objC, objB)
-
-
-
-
-
-
-
-function Product(name, price) {
+function Product (name, price) {
     this.name = name
     this.price = price
+
+    Object.defineProperty(this, 'price', {
+        enumerable: true,
+        value: price,
+        writable: true,
+        configurable: false
+    })
 }
 
-Product.prototype.descont = function (percent) {
-    this.price = this.price - (this.price * (percent / 100))
+Product.prototype.descount = function (percent) {
+    return this.price = this.price - (this.price * (percent / 100))
 }
 
 Product.prototype.plus = function (percent) {
-    this.price = this.price + (this.price * (percent / 100))
+    return this.price = this.price + (this.price * (percent / 100))
 }
-
-const p1 = new Product('Shirt', 70)
-
 //literal
+
+const p1 = new Product('iphone', 3000)
 
 const p2 = {
     name: 'T-shirt',
@@ -42,4 +28,9 @@ const p2 = {
 
 Object.setPrototypeOf(p2, Product.prototype)
 
-p2.plus(10)
+
+p1.descount(20)
+console.log(p1)
+
+p2.plus(30)
+console.log(p2)

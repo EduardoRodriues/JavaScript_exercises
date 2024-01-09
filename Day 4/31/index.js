@@ -1,21 +1,17 @@
 function People (name, fullName) {
 
-    const ID = 123456
-    const metod = () => {}
-
     this.name = name
     this.fullName = fullName
 
-
-    this.method = () => {
-        console.log(this.name + ': fuck')
-    }
 }
 
-const p1 = new People ('Lucas', 'Pau')
-const p2 = new People ('Martim', 'Pau')
-const p3 = new People ('Jeds', 'Pau')
-const p4 = new People ('Luke', 'Pau')
+const p1 = new People('Jessie', 'Margo')
+const p2 = new People('Luke', 'Surt')
+const p3 = new People('Mike', 'Letson')
+const p4 = new People('Robin', 'Maltone')
 
-console.log(p1)
-
+console.log(p1.name)
+console.log(p2)
+console.log(p3.fullName)
+console.log(p4)
+console.log(p4.name, p3.fullName)

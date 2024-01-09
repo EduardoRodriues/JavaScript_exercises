@@ -26,8 +26,25 @@ function Product (name, price, amount) {
     })
 }
 
+function Product2 (price, name, amount) {
+    
+    this.name = name
+    this.price = price
+
+    Object.defineProperty(this, 'amount', {
+        enumerable: true,
+        value: amount,
+        writable: true,
+        configurable: false
+    })
+}
+
 const p1 = new Product('T-shirt', 20, 10)
 p1.amount = 500
 delete p1.amount
-console.log(p1)
-console.log(Object.keys(p1))
+
+const p2 = new Product2(20, 'CellPhone', 2)
+p2.amount = 30
+
+console.log(p2)
+console.log(Object.keys(p2))
