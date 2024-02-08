@@ -10,12 +10,34 @@ function Product (name, price) {
     })
 }
 
-Product.prototype.descount = function (percent) {
+Product.prototype.discount = function (percent) {
     return this.price = this.price - (this.price * (percent / 100))
 }
 
 Product.prototype.plus = function (percent) {
     return this.price = this.price + (this.price * (percent / 100))
+}
+
+
+
+function Product_2 (name, price) {
+    this.name = name
+    this.price = price
+
+    Object.defineProperty(this, 'price',{
+        enumerable: true,
+        value: price,
+        configurable: false,
+        writable: true
+    })
+}
+
+Product_2.prototype.discount = (percent) => {
+    return this.price = this.price - (this.price * (percent/100))
+}
+
+Product_2.prototype.plus = (percent) => {
+    return this.price = this.price + (this.price * (percent/100))
 }
 //literal
 
@@ -25,6 +47,8 @@ const p2 = {
     name: 'T-shirt',
     price: 30
 }
+
+const pro1 = new Product_2('cellphone', 2000)
 
 Object.setPrototypeOf(p2, Product.prototype)
 

@@ -23,3 +23,4 @@ class RemoteController {
 
 const control1 = new RemoteController('LG')
 RemoteController.soma()
+console.log(control1)

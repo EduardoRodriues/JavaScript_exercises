@@ -44,5 +44,49 @@ class Tablet extends EletronicDispositive  {
     }
 }
 
+
+
+class DomesticItems {
+    constructor(name, size, color) {
+        this.name = name
+        this.size = size
+        this.color = color
+        this.isWorking = true
+
+    }
+
+    working() {
+        if(this.isWorking) {
+            console.log('working')
+        }
+
+        this.isWorking = true
+    }
+
+    working() {
+        if(!this.isWorking) {
+            console.log('not working')
+        }
+
+        this.isWorking = false
+    }
+}
+
+class SmartTvs extends DomesticItems {
+    constructor(name, model) {
+        super(name)
+
+        this.model = model
+    }
+
+    on() {
+        console.log('on')
+    }
+}
+
 const S1 = new SmartPhone('Iphone', 'BlackPiano', 11)
+const maquinaDeLavar = new DomesticItems('maquina de lavar', 'medium', 'black')
+const smart1 = new SmartTvs('smart', 2)
 console.log(S1)
+console.log(maquinaDeLavar)
+console.log(smart1)
