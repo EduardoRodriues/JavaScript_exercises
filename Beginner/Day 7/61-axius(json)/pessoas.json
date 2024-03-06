@@ -1,0 +1,58 @@
+[
+    {
+      "nome": "João Silva",
+      "email": "joao@example.com",
+      "salario": 5000,
+      "estado": "São Paulo",
+      "empresa": "Empresa A"
+    },
+    {
+      "nome": "Maria Souza",
+      "email": "maria@example.com",
+      "salario": 6000,
+      "estado": "Rio de Janeiro",
+      "empresa": "Empresa B"
+    },
+    {
+      "nome": "Pedro Oliveira",
+      "email": "pedro@example.com",
+      "salario": 5500,
+      "estado": "Minas Gerais",
+      "empresa": "Empresa C"
+    },
+    {
+    "nome": "Ana Santos",
+    "email": "ana@example.com",
+    "salario": 4800,
+    "estado": "Santa Catarina",
+    "empresa": "Empresa D"
+  },
+  {
+    "nome": "Carlos Ferreira",
+    "email": "carlos@example.com",
+    "salario": 5200,
+    "estado": "Paraná",
+    "empresa": "Empresa E"
+  },
+  {
+    "nome": "Laura Lima",
+    "email": "laura@example.com",
+    "salario": 5300,
+    "estado": "Bahia",
+    "empresa": "Empresa F"
+  },
+  {
+    "nome": "Rafael Barbosa",
+    "email": "rafael@example.com",
+    "salario": 5800,
+    "estado": "Ceará",
+    "empresa": "Empresa G"
+  },
+  {
+    "nome": "Juliana Costa",
+    "email": "juliana@example.com",
+    "salario": 6200,
+    "estado": "Pernambuco",
+    "empresa": "Empresa H"
+  }
+  ]
